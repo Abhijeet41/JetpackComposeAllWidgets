@@ -1,4 +1,4 @@
-package com.abhi41.jetpackcodingwithcat.examples.card
+package com.abhi41.jetpackcodingwithcat.examples.widgets.card
 
 import android.widget.Toast
 import androidx.compose.foundation.Image

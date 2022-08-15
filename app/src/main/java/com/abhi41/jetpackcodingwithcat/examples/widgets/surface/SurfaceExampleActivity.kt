@@ -1,4 +1,4 @@
-package com.abhi41.jetpackcodingwithcat.examples.surface
+package com.abhi41.jetpackcodingwithcat.examples.widgets.surface
 
 import android.widget.Toast
 import androidx.compose.foundation.Image

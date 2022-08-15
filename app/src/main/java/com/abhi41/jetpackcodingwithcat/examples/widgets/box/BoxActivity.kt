@@ -1,4 +1,4 @@
-package com.abhi41.jetpackcodingwithcat.examples.box
+package com.abhi41.jetpackcodingwithcat.examples.widgets.box
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*

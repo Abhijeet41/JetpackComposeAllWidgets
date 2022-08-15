@@ -1,4 +1,4 @@
-package com.abhi41.jetpackcodingwithcat.examples.button
+package com.abhi41.jetpackcodingwithcat.examples.widgets.button
 
 import android.widget.Toast
 import androidx.compose.foundation.BorderStroke

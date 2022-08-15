@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
           <value>
             <set />
@@ -58,6 +63,46 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/BottomNavigationBarDemo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/navigation/BottomBarScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/navigation/BottomNavGraph.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/screen/HomeScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/screen/MainScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/screen/ProfileScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/screen/SettingScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/drawer/NavigationDrawer.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/surface/SurfaceExampleActivity.kt">
           <value>
             <set />
@@ -79,6 +124,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/textfield/TextFieldActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/dropdownmenu/DropDownMenuExample.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/topAppbar/TopAppBarExample.kt">
           <value>
             <set />
           </value>

@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalComposeUiApi::class)
 
-package com.abhi41.jetpackcodingwithcat.examples.textfield
+package com.abhi41.jetpackcodingwithcat.examples.widgets.textfield
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardActions
