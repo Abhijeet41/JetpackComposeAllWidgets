@@ -8,7 +8,37 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../Kotlin App Development 2022/JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/common/RecipesListContent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Kotlin App Development 2022/JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/recipesScreen/RecipesListScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Kotlin App Development 2022/JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/screens/recipesScreen/RecipesViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Kotlin App Development 2022/JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/utils/newtwork_status/ConnectivityObserver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Kotlin App Development 2022/JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/utils/newtwork_status/NetworkConnectivityObserver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/ksp/debug/kotlin/com/abhi41/jetpackcodingwithcat/examples/notification/destinations/NotificationScreenDestination.kt">
           <value>
             <set />
           </value>
@@ -23,7 +53,62 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/MyApplication.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/di/NotificationModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/InternetConnection/ConnectionScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/InternetConnection/ConnectivityObserver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/InternetConnection/NetworkConnectivityObserver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/Services/MyBackgroundService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/Services/MyForegroundService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/Services/ServicesDemo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/TextExamples.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/alarmManager/Alarm.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/alarmManager/AlarmManagerDemo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/alarmManager/AlarmReceiver.kt">
           <value>
             <set />
           </value>
@@ -48,6 +133,61 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/CoroutineExceptionHandling.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/CoroutineHandling.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/FlowActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/screen/FlowViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/AsyncAwaitDemo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/CoroutineContext.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/JobsWaitingCancelation.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/JobsWaitingCancellation.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/KotlinCoroutines.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/KotlinScopes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/RunBlocking.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/dialogBox/AlertDialogExampleActivity.kt">
           <value>
             <set />
@@ -64,6 +204,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/BottomNavigationBarDemo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/navigation/bottom_navigation/MainScreen.kt">
           <value>
             <set />
           </value>
@@ -103,6 +248,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/notification/DetailScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/notification/NotificationScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/notification/NotificationViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/permission/MutiplePermissions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/permission/PermissionsStateExt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/surface/SurfaceExampleActivity.kt">
           <value>
             <set />
@@ -128,12 +298,77 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/viewpager/SliderLayout.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/viewpager/ViewPagerScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/viewpager/ViewPagerSlider.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/viewpager/ViewpagerScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/viewpager/model/Nature.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/dropdownmenu/DropDownMenuExample.kt">
           <value>
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/lazy_column/SwipeableLazyColumn.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/lazy_column/lazy_column_swipable.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/text/TextExamples.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/topAppbar/TopAppBarExample.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/receiver/MyNotificationReceiver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/receiver/MyNotificationReciver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/receiver/NotificationReplyReceiver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/receiver/RebootBroadCastService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/util/Constants.kt">
           <value>
             <set />
           </value>
