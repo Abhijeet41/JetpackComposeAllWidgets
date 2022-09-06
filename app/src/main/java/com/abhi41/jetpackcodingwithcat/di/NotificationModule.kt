@@ -14,6 +14,7 @@ import com.abhi41.jetpackcodingwithcat.MainActivity
 import com.abhi41.jetpackcodingwithcat.R
 import com.abhi41.jetpackcodingwithcat.receiver.MyNotificationReceiver
 import com.abhi41.jetpackcodingwithcat.util.Constants
+import com.abhi41.jetpackcodingwithcat.util.Constants.DETAIL_SCREEN
 import com.abhi41.jetpackcodingwithcat.util.Constants.MY_URI
 import dagger.Module
 import dagger.Provides
@@ -52,7 +53,8 @@ object NotificationModule {
         //val clickIntent = Intent(context,MainActivity::class.java)
         val clickIntent = Intent(
             Intent.ACTION_VIEW,
-            "$MY_URI/$MY_URI=Coming from notification".toUri(),
+            //"$MY_URI/message=Coming from notification".toUri(), //this one is without route param
+            "$MY_URI$DETAIL_SCREEN/message=Coming from notification".toUri(),
             context,
             MainActivity::class.java
         )
@@ -116,11 +118,11 @@ object NotificationModule {
         )
         val replyAction = NotificationCompat.Action.Builder(
             0,
-                "Reply",replyPendingIntent
+            "Reply", replyPendingIntent
         ).addRemoteInput(remoteInput).build()
         val person = Person.Builder().setName("Abhijeet").build()
         val notificationStyle = NotificationCompat.MessagingStyle(person)
-            .addMessage("Hi there!", System.currentTimeMillis(),person)
+            .addMessage("Hi there!", System.currentTimeMillis(), person)
         return NotificationCompat.Builder(context, "Main Channel ID")
             .setSmallIcon(R.drawable.ic_notifications_24)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)

@@ -13,5 +13,6 @@ object Constants {
 
     //uri
     const val MY_URI = "https://stevdza-san.com"
+    const val DETAIL_SCREEN = "/detail_screen"
     const val MY_ARG = "message"
 }

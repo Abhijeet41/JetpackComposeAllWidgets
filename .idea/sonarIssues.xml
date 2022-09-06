@@ -153,6 +153,36 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/screen/StateFlowViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/screen/combine_zip_merge/CombineZipMerge.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/screen/combine_zip_merge/CombineZipMergeViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/screen/combine_zip_merge/ProfileState.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/screen/combine_zip_merge/model/Post.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/flows/screen/combine_zip_merge/model/User.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/AsyncAwaitDemo.kt">
           <value>
             <set />

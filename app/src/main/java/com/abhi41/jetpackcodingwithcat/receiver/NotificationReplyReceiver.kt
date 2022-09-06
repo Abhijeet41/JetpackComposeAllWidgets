@@ -37,6 +37,8 @@ class NotificationReplyReceiver : BroadcastReceiver() {
                 1,
                 notificationBuilder
                     .setStyle(notificationStyle)
+                    //.setContentTitle("Sent!")
+                    //.setStyle(null)
                     .build()
             )
 

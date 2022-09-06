@@ -10,12 +10,35 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
+import androidx.navigation.navArgument
+import com.abhi41.jetpackcodingwithcat.util.Constants.DETAIL_SCREEN
+import com.abhi41.jetpackcodingwithcat.util.Constants.MY_ARG
+import com.abhi41.jetpackcodingwithcat.util.Constants.MY_URI
+import com.ramcosta.composedestinations.annotation.DeepLink
 import com.ramcosta.composedestinations.annotation.Destination
+import com.ramcosta.composedestinations.navigation.DestinationsNavigator
 
-
-@Destination
+//official doc from rafel
+@Destination(
+    route = "detail_screen",
+    deepLinks = [
+        DeepLink(
+            uriPattern = "{$MY_URI}${DETAIL_SCREEN}/{message}"
+        )
+    ]
+)
+//this is alternative with out route parameter
+/*@Destination(
+    deepLinks = [
+        DeepLink(
+            uriPattern = "{$MY_URI}/{message}"
+        )
+    ]
+)*/
 @Composable
-fun DetailScreen(message: String) {
+fun DetailScreen(
+    message: String,
+) {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
