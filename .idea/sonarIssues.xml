@@ -8,6 +8,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../../GitHubJava/Database-Backup-Restore/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GitHubJava/Database-Backup-Restore/app/src/main/java/com/prof/dbtest/AlarmReceiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GitHubJava/Database-Backup-Restore/app/src/main/java/com/prof/dbtest/ui/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../GoodConnect/platforms/android/app/src/main/java/com/talic/dbBackup/Util.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../../Kotlin App Development 2022/JetFoodRecipe/app/src/main/java/com/abhi41/jetfoodrecipeapp/presentation/common/RecipesListContent.kt">
           <value>
             <set />
@@ -89,6 +109,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/Services/ServicesDemo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/Shared_pref_security/SharedPrefConst.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/Shared_pref_security/SharedPrefScreen.kt">
           <value>
             <set />
           </value>
@@ -214,6 +244,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/coroutine/series/RunBlocking.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/crytptography/CrptographyScreen.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/crytptography/CryptoManager.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/crytptography/CryptographyScreen.kt">
           <value>
             <set />
           </value>
@@ -364,6 +409,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/lazy_column/lazy_column_swipable.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/abhi41/jetpackcodingwithcat/examples/widgets/otpview/OtpViewScreen.kt">
           <value>
             <set />
           </value>
