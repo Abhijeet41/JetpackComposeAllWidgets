@@ -2,12 +2,14 @@
 
 package com.abhi41.jetpackcodingwithcat.examples.widgets.motion_layout
 
+import androidx.compose.animation.core.Animatable
 import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.Button
 import androidx.compose.material.Slider
 import androidx.compose.material.Text
 import androidx.compose.runtime.*
@@ -23,14 +25,17 @@ import androidx.constraintlayout.compose.ExperimentalMotionApi
 import androidx.constraintlayout.compose.MotionLayout
 import androidx.constraintlayout.compose.MotionScene
 import com.abhi41.jetpackcodingwithcat.R
-import com.ramcosta.composedestinations.spec.DestinationStyle.Dialog.Default.properties
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 @Composable
 fun CollapsingAppbar() {
     Column {
+        val coroutine = rememberCoroutineScope()
         var progress by remember {
             mutableStateOf(0f)
         }
+
         ProfileHeader(progress = progress)
         Spacer(modifier = Modifier.height(32.dp))
         Slider(
@@ -40,6 +45,19 @@ fun CollapsingAppbar() {
                 progress = it
             }
         )
+
+        Button(onClick = {
+            coroutine.launch {
+                    var i = 0.0f
+                    while (i < 1.0f) {
+                        i += 0.1f
+                        progress = i
+                        delay(30)
+                    }
+            }
+        }) {
+            Text(text = "CLick to show animation")
+        }
     }
 }
 
@@ -57,7 +75,7 @@ fun ProfileHeader(progress: Float) {
         motionScene = MotionScene(content = motionScene),
         progress = progress,
         modifier = Modifier.fillMaxWidth()
-    ) {
+    )  {
         val properties = motionProperties(id = "profile_pic")
         Box(
             modifier = Modifier
@@ -65,25 +83,24 @@ fun ProfileHeader(progress: Float) {
                 .background(Color.DarkGray)
                 .layoutId("box")
         )
-        Image(
-            painter = painterResource(id = R.drawable.abhijeet),
-            contentDescription = null,
-            modifier = Modifier
-                .clip(CircleShape)
-                .border(
-                    width = 2.dp,
-                    color = properties.value.color("background"),
-                    shape = CircleShape
-                )
-                .layoutId("profile_pic")
-        )
-        Text(
-            text = "Abhijeet Mule",
-            fontSize = 24.sp,
-            modifier = Modifier.layoutId("username"),
-            color = properties.value.color("background")
-        )
-    }
-
+            Image(
+                painter = painterResource(id = R.drawable.abhijeet),
+                contentDescription = null,
+                modifier = Modifier
+                    .clip(CircleShape)
+                    .border(
+                        width = 2.dp,
+                        color = properties.value.color("background"),
+                        shape = CircleShape
+                    )
+                    .layoutId("profile_pic")
+            )
+            Text(
+                text = "Abhijeet Mule",
+                fontSize = 24.sp,
+                modifier = Modifier.layoutId("username"),
+                color = properties.value.color("background")
+            )
+        }
 
 }
