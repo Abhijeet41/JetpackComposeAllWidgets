@@ -152,8 +152,17 @@ object NotificationModule {
             Constants.CHANNEL_NAME,
             NotificationManager.IMPORTANCE_LOW //to avoid notification sound
         )
+        //this channel is specific for location tracking
+
+        val channel_location = NotificationChannel(
+            Constants.CHANNEL_ID_LOCATION,
+            Constants.CHANNEL_NAME,
+            NotificationManager.IMPORTANCE_LOW
+        )
+
         notificationManager.createNotificationChannel(channel)
         notificationManager.createNotificationChannel(chanel_download)
+        notificationManager.createNotificationChannel(channel_location)
         return notificationManager
     }
 

@@ -11,6 +11,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.layoutId
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -21,6 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.constraintlayout.compose.ConstraintSet
 import androidx.constraintlayout.compose.ExperimentalMotionApi
 import androidx.constraintlayout.compose.MotionLayout
+import androidx.constraintlayout.compose.MotionScene
 import com.abhi41.jetpackcodingwithcat.R
 
 @SuppressLint("UnusedMaterialScaffoldPaddingParameter")
@@ -57,6 +59,13 @@ fun MotionLayoutGeekForGeeks() {
 @OptIn(ExperimentalMotionApi::class, ExperimentalUnitApi::class)
 @Composable
 fun MotionLayoutButton() {
+    val context = LocalContext.current
+    val motionScene = remember {
+        context.resources
+            .openRawResource(R.raw.motion_geek)
+            .readBytes()
+            .decodeToString()
+    }
 
     var animateButton by remember { mutableStateOf(false) }
     val buttonAnimationProgress by animateFloatAsState(
@@ -65,7 +74,8 @@ fun MotionLayoutButton() {
     )
 
     MotionLayout(
-        ConstraintSet(
+        //no need to set constraint here, create json5 in raw folder
+        /*ConstraintSet(
             """ {
                   btnKotlin: {
                     width: "spread",
@@ -98,7 +108,8 @@ fun MotionLayoutButton() {
                     end: ['parent', 'end', 30],
                   }
                } """
-        ),
+        ),*/
+        motionScene = MotionScene(content = motionScene),
         progress = buttonAnimationProgress,
         modifier = Modifier
             .fillMaxWidth()

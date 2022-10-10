@@ -1,0 +1,34 @@
+{
+  ConstraintSets: {
+    start: {
+      btnKotlin: {
+        width: "spread",
+        height: 120,
+        start: ['parent', 'start', 16],
+        end: ['parent', 'end', 16],
+        top: ['parent', 'top', 0]
+      },
+      btnJava: {
+        width: "spread",
+        height: 120,
+        start: ['parent', 'start', 16],
+        end: ['parent', 'end', 16],
+        top: ['btnKotlin', 'bottom', 16] //top to bottom of button1
+      }
+    },
+    end: {
+      btnKotlin: {
+        width: 150,
+        height: 120,
+        start: ['parent', 'start', 30],
+        end: ['btnJava', 'start', 10],
+      },
+      btnJava: {
+        width: 150,
+        height: 120,
+        start: ['btnKotlin', 'end', 10],//start to end of btnKotlin
+        end: ['parent', 'end', 30],
+      }
+    }
+  }
+}

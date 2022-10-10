@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.abhi41.jetpackcodingwithcat.examples.InternetConnection.ConnectionScreen
 import com.abhi41.jetpackcodingwithcat.examples.Services.ServicesDemo
 import com.abhi41.jetpackcodingwithcat.examples.Shared_pref_security.SharedPrefScreen
+import com.abhi41.jetpackcodingwithcat.examples.TracklocationBackground.TrackLocationScreen
 import com.abhi41.jetpackcodingwithcat.examples.alarmManager.AlarmManagerDemo
 import com.abhi41.jetpackcodingwithcat.examples.coroutine.series.KotlinScopes
 import com.abhi41.jetpackcodingwithcat.examples.crytptography.CryptographyScreen
@@ -64,7 +65,8 @@ class MainActivity : ComponentActivity() {
                // ConstraintLayoutDemo()
                // MultiPreview()
                // MotionLayoutGeekForGeeks()
-                CollapsingAppbar()
+               // CollapsingAppbar()
+                TrackLocationScreen()
             }
         }
     }

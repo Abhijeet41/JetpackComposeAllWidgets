@@ -67,7 +67,10 @@
             translationX: [0, 70, 0],
           }
         ]
-      }
+      },
+     OnSwipe: {
+
+     }
     }
   }
 }

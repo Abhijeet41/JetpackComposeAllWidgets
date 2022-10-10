@@ -9,6 +9,9 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:name=".MyApplication"
@@ -56,6 +59,12 @@
             android:enabled="true"
             android:exported="true" />
 
+        <!--this was necessary for location foregroundServiceType-->
+        <service
+            android:name=".examples.TracklocationBackground.LocationService"
+            android:foregroundServiceType="location"
+            />
+
         <receiver
             android:name=".receiver.RebootBroadCastService"
             android:exported="true">
@@ -65,9 +74,9 @@
         </receiver>
 
         <receiver
+            android:name=".receiver.NotificationReplyReceiver"
             android:enabled="true"
-            android:exported="true"
-            android:name=".receiver.NotificationReplyReceiver">
+            android:exported="true">
 
         </receiver>
     </application>
