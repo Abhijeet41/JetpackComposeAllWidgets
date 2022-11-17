@@ -16,8 +16,11 @@ import com.abhi41.jetpackcodingwithcat.examples.navigation.bottom_navigation.scr
 import com.abhi41.jetpackcodingwithcat.examples.notification.NotificationScreen
 import com.abhi41.jetpackcodingwithcat.examples.permission.MutiplePermissions
 import com.abhi41.jetpackcodingwithcat.examples.viewpager.ViewPagerScreen
+import com.abhi41.jetpackcodingwithcat.examples.widgets.animation.BorderAnimation
+import com.abhi41.jetpackcodingwithcat.examples.widgets.animation.InfiniteAnimation
 import com.abhi41.jetpackcodingwithcat.examples.widgets.collapsing_effect.CollapsingEffectScreen
 import com.abhi41.jetpackcodingwithcat.examples.widgets.constraint_layout.ConstraintLayoutDemo
+import com.abhi41.jetpackcodingwithcat.examples.widgets.date_time_picker.DateAndTimePicker
 import com.abhi41.jetpackcodingwithcat.examples.widgets.lazy_column.SwipeableLazyColumn
 import com.abhi41.jetpackcodingwithcat.examples.widgets.motion_layout.CollapsingAppbar
 import com.abhi41.jetpackcodingwithcat.examples.widgets.motion_layout.MotionLayoutGeekForGeeks
@@ -42,6 +45,7 @@ class MainActivity : ComponentActivity() {
                 //CustomTextFieldActivity()
                //BoxActivity()
                // AlertDialogExampleActivity()
+                    DateAndTimePicker()
                // CustomAlertDialogExampleActivity()
                // ModalBottomSheetActivity()
                // NavigationDrawer()
@@ -66,7 +70,9 @@ class MainActivity : ComponentActivity() {
                // MultiPreview()
                // MotionLayoutGeekForGeeks()
                // CollapsingAppbar()
-                TrackLocationScreen()
+               // TrackLocationScreen()
+                //BorderAnimation()
+                //InfiniteAnimation()
             }
         }
     }
