@@ -5,6 +5,7 @@ import android.app.Notification.VISIBILITY_PUBLIC
 import android.content.Context
 import android.content.Intent
 import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.Person
@@ -14,8 +15,11 @@ import com.abhi41.jetpackcodingwithcat.MainActivity
 import com.abhi41.jetpackcodingwithcat.R
 import com.abhi41.jetpackcodingwithcat.receiver.MyNotificationReceiver
 import com.abhi41.jetpackcodingwithcat.util.Constants
+import com.abhi41.jetpackcodingwithcat.util.Constants.CHANNEL_ID_WORKER
+import com.abhi41.jetpackcodingwithcat.util.Constants.CHANNEL_NAME
 import com.abhi41.jetpackcodingwithcat.util.Constants.DETAIL_SCREEN
 import com.abhi41.jetpackcodingwithcat.util.Constants.MY_URI
+import com.abhi41.jetpackcodingwithcat.util.Constants.WORKER_NOTIFICATION_ID
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -67,7 +71,7 @@ object NotificationModule {
             .setContentText("Youtube Channel: Stevdza-San")
             .setSmallIcon(R.drawable.ic_notifications_24)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-            .setVisibility(VISIBILITY_PUBLIC)
+            .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
             .setPublicVersion(
                 NotificationCompat.Builder(context, Constants.CHANNEL_ID)
                     .setContentTitle("Hidden")
@@ -131,7 +135,25 @@ object NotificationModule {
             .addAction(replyAction)
     }
 
+    @Singleton
+    @Provides
+    @WorkerNotificationBuilder
+    fun createWorkManagerNotification(
+        @ApplicationContext ctx: Context,
+        title: String,
+        description: String
+    ): NotificationCompat.Builder {
+        val builder = NotificationCompat.Builder(ctx, Constants.CHANNEL_ID)
+            .setSmallIcon(R.drawable.ic_notifications_24)
+            .setContentTitle(title)
+            .setContentText(description)
+            .setOngoing(true)
+            .setAutoCancel(true)
 
+        return builder
+    }
+
+    @RequiresApi(Build.VERSION_CODES.O)
     @Singleton
     @Provides
     fun provideNotificationManager(
@@ -146,27 +168,33 @@ object NotificationModule {
         /* we have to use second channel because when ever we use progressbar we don't want to make
             notification sound
          */
-
         val chanel_download = NotificationChannel(
             Constants.CHANNEL_ID_DOWNLOAD,
             Constants.CHANNEL_NAME,
             NotificationManager.IMPORTANCE_LOW //to avoid notification sound
         )
         //this channel is specific for location tracking
-
         val channel_location = NotificationChannel(
             Constants.CHANNEL_ID_LOCATION,
             Constants.CHANNEL_NAME,
             NotificationManager.IMPORTANCE_LOW
         )
+        val channel_worker = NotificationChannel(
+            Constants.CHANNEL_ID_WORKER,
+            Constants.CHANNEL_NAME,
+            NotificationManager.IMPORTANCE_DEFAULT
+        )
 
         notificationManager.createNotificationChannel(channel)
         notificationManager.createNotificationChannel(chanel_download)
         notificationManager.createNotificationChannel(channel_location)
+        notificationManager.createNotificationChannel(channel_worker)
+
         return notificationManager
     }
 
 }
+
 
 //provide multiple bindings for the same type
 /*
@@ -185,3 +213,7 @@ annotation class DownloadNotificationCompactBuilder
 @Qualifier
 @Retention(AnnotationRetention.BINARY)
 annotation class ReplyMessageNotificationBuilder
+
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class WorkerNotificationBuilder

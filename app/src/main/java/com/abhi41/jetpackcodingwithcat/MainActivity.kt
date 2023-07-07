@@ -9,6 +9,8 @@ import com.abhi41.jetpackcodingwithcat.examples.Services.ServicesDemo
 import com.abhi41.jetpackcodingwithcat.examples.Shared_pref_security.SharedPrefScreen
 import com.abhi41.jetpackcodingwithcat.examples.TracklocationBackground.TrackLocationScreen
 import com.abhi41.jetpackcodingwithcat.examples.alarmManager.AlarmManagerDemo
+import com.abhi41.jetpackcodingwithcat.examples.broad_cast_receiver.BoradCastScreen
+import com.abhi41.jetpackcodingwithcat.examples.coroutine.channels.ChannelsExample
 import com.abhi41.jetpackcodingwithcat.examples.coroutine.series.KotlinScopes
 import com.abhi41.jetpackcodingwithcat.examples.crytptography.CryptographyScreen
 import com.abhi41.jetpackcodingwithcat.examples.double_back_exit.DoubleBackToExit
@@ -25,6 +27,9 @@ import com.abhi41.jetpackcodingwithcat.examples.widgets.lazy_column.SwipeableLaz
 import com.abhi41.jetpackcodingwithcat.examples.widgets.motion_layout.CollapsingAppbar
 import com.abhi41.jetpackcodingwithcat.examples.widgets.motion_layout.MotionLayoutGeekForGeeks
 import com.abhi41.jetpackcodingwithcat.examples.widgets.multi_preview.MultiPreview
+import com.abhi41.jetpackcodingwithcat.examples.widgets.slider.SliderExample
+import com.abhi41.jetpackcodingwithcat.examples.widgets.textfield.CustomTextFieldActivity
+import com.abhi41.jetpackcodingwithcat.examples.widgets.textfield.TextFieldActivity
 import com.abhi41.jetpackcodingwithcat.examples.widgets.topAppbar.TopAppBarExample
 import com.abhi41.jetpackcodingwithcat.ui.theme.JetpackCodingWithCatTheme
 import com.ramcosta.composedestinations.DestinationsNavHost
@@ -41,11 +46,11 @@ class MainActivity : ComponentActivity() {
                 //ImageExampleDemo()
                 //CardExampleActivity()
                 //SurfaceExampleActivity()
-                //TextFieldActivity()
-                //CustomTextFieldActivity()
+               // TextFieldActivity()
+               // CustomTextFieldActivity()
                //BoxActivity()
                // AlertDialogExampleActivity()
-                    DateAndTimePicker()
+               // DateAndTimePicker()
                // CustomAlertDialogExampleActivity()
                // ModalBottomSheetActivity()
                // NavigationDrawer()
@@ -73,6 +78,9 @@ class MainActivity : ComponentActivity() {
                // TrackLocationScreen()
                 //BorderAnimation()
                 //InfiniteAnimation()
+               // SliderExample()
+                //ChannelsExample()
+                BoradCastScreen()
             }
         }
     }

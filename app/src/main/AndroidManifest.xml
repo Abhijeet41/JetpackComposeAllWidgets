@@ -25,12 +25,38 @@
         android:theme="@style/Theme.JetpackCodingWithCat"
         tools:targetApi="31">
         <activity
+            android:name=".examples.multiple_launguages.ItemActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:exported="false" />
+        <activity
+            android:name=".examples.multiple_launguages.MultiLanguage"
+            android:theme="@style/Theme.AppCompat"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".examples.broad_cast_receiver.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".examples.observe_gps_status.ObserveGpsStatus"
+            android:exported="false" />
+        <activity
             android:name=".examples.coroutine.flows.FlowActivity"
             android:exported="true"
             android:label="@string/title_activity_flow"
-            android:theme="@style/Theme.JetpackCodingWithCat">
-
-        </activity>
+            android:theme="@style/Theme.JetpackCodingWithCat" />
 
         <receiver android:name=".receiver.MyNotificationReceiver" />
 
@@ -39,12 +65,14 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.JetpackCodingWithCat">
+
+            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+            -->
         </activity>
 
         <receiver
@@ -57,13 +85,10 @@
         <service
             android:name=".examples.Services.MyForegroundService"
             android:enabled="true"
-            android:exported="true" />
-
-        <!--this was necessary for location foregroundServiceType-->
+            android:exported="true" /> <!-- this was necessary for location foregroundServiceType -->
         <service
             android:name=".examples.TracklocationBackground.LocationService"
-            android:foregroundServiceType="location"
-            />
+            android:foregroundServiceType="location" />
 
         <receiver
             android:name=".receiver.RebootBroadCastService"
@@ -72,13 +97,15 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
-
         <receiver
             android:name=".receiver.NotificationReplyReceiver"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true" />
 
-        </receiver>
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove" />
     </application>
 
 </manifest>

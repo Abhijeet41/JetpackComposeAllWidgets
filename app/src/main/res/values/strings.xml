@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">JetpackCodingWithCat</string>
-    <string name="channel_name">Channel Name</string>
-    <string name="channel_description">Channel Description</string>
-    <string name="title_activity_flow">FlowActivity</string>
+    <string name="app_name" translatable="false">JetpackCodingWithCat</string>
+    <string name="channel_name" translatable="false">Channel Name</string>
+    <string name="channel_description" translatable="false">Channel Description</string>
+    <string name="title_activity_flow" translatable="false">FlowActivity</string>
+    <string name="welcome_to_my_world" translatable="false">Welcome to My World</string>
+    <string name="change_language" translatable="false">Change Language</string>
+
+    <string name="english" translatable="false">English</string>
+    <string name="hindi" translatable="false">Hindi</string>
+    <string name="marathi" translatable="false">Marathi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="kotlin">kotlin</string>
 </resources>

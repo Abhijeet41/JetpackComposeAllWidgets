@@ -8,6 +8,7 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.DialogProperties
 import com.vanpra.composematerialdialogs.MaterialDialog
@@ -16,6 +17,7 @@ import com.vanpra.composematerialdialogs.datetime.time.timepicker
 import com.vanpra.composematerialdialogs.rememberMaterialDialogState
 import java.time.LocalDate
 import java.time.LocalTime
+import java.time.ZonedDateTime
 import java.time.format.DateTimeFormatter
 
 @Composable
@@ -27,12 +29,24 @@ fun DateAndTimePicker() {
     var pickedTime by remember {
         mutableStateOf(LocalTime.NOON)
     }
+    val date = remember { //date api from desugar_jdk_libs
+        // LocalDate.now().dayOfWeek
+        //  LocalDate.now().dayOfMonth
+        //   LocalDate.now().dayOfYear
+        // LocalDateTime.now().plusHours(15)
+        ZonedDateTime.now()
+    }
 
     val formattedDate by remember {
         derivedStateOf {
             DateTimeFormatter.ofPattern("MMM dd yyyy")
                 .format(pickedDate)
         }
+    }
+
+    val formattedDate2 = remember {
+        DateTimeFormatter.ofPattern("dd MM yyy")
+            .format(date)
     }
 
     val formattedTime by remember {
@@ -65,6 +79,8 @@ fun DateAndTimePicker() {
             Text(text = "Pick time")
         }
         Text(text = formattedTime)
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(text = formattedDate2.toString())
     }
 
     MaterialDialog(
@@ -125,4 +141,10 @@ fun DateAndTimePicker() {
             pickedTime = it
         }
     }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun DateAndTimePickerPreview() {
+    DateAndTimePicker()
 }

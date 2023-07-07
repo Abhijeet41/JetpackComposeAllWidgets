@@ -24,6 +24,7 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import com.abhi41.jetpackcodingwithcat.R
 
+
 @Composable
 fun TextFieldActivity() {
     Column(
@@ -45,9 +46,7 @@ fun TextFieldActivity() {
 
 @Composable
 fun SimpleTextField() {
-    var text by remember {
-        mutableStateOf("")
-    }
+    var text by remember { mutableStateOf("") }
     TextField(
         modifier = Modifier.fillMaxWidth(),
         value = text,
@@ -222,3 +221,4 @@ private fun PasswordTypeTextField() {
         )
     )
 }
+

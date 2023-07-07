@@ -2,6 +2,7 @@
 
 package com.abhi41.jetpackcodingwithcat.examples.widgets.textfield
 
+import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
@@ -104,16 +105,16 @@ private fun OutLineTextFieldExample() {
             text = it
         },
         label = {
-            Text(text = "I'm the label", color = Color.Red)
+            Text(text = "I'm the label", color = Color.Blue)
         },
         leadingIcon = {
-            Icon(Icons.Filled.Email, null, tint = Color.Red)
+            Icon(Icons.Filled.Email, null, tint = Color.Blue)
         },
         trailingIcon = {
             Text(
                 modifier = Modifier.padding(end = 10.dp),
                 text = "@xxx.com",
-                color = Color.Red,
+                color = Color.Blue,
             )
         },
         placeholder = {
@@ -130,10 +131,10 @@ private fun OutLineTextFieldExample() {
         ),
         maxLines = 1,
         colors = TextFieldDefaults.textFieldColors(
-            textColor = Color.Red,
+            textColor = Color.Blue,
             backgroundColor = Color.Transparent,
-            cursorColor = Color.Red,
-            focusedIndicatorColor = Color.Red,
+            cursorColor = Color.Blue,
+            focusedIndicatorColor = Color.Blue,
             unfocusedIndicatorColor = Color.Gray,
             focusedLabelColor = Color.Black,
             unfocusedLabelColor = Color.Blue,

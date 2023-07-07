@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_to_my_world">मेरी दुनिया में आपका स्वागत है</string>
+    <string name="change_language">भाषा बदलें</string>
+    <string name="kotlin">कोटलिन</string>
+</resources>
